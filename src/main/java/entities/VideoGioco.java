@@ -25,4 +25,9 @@ public class VideoGioco extends Gioco {
     public Genere getGenere() {
         return genere;
     }
+    @Override
+    public String toString() {
+        return getTitolo() + " (ID: " + getId() + ", Prezzo: " + getPrezzo() +
+                ", Piattaforma: " + piattaforma + ", Durata: " + durataOre + "h, Genere: " + genere + ")";
+    }
 }

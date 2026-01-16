@@ -26,4 +26,9 @@ public class GiocoDaTavolo extends Gioco {
     public int getDurataMediaMinuti() {
         return durataMediaMinuti;
     }
+    @Override
+    public String toString() {
+        return getTitolo() + " (ID: " + getId() + ", Prezzo: " + getPrezzo() +
+                ", Giocatori: " + numeroGiocatori + ", Durata: " + durataMediaMinuti + "min)";
+    }
 }
